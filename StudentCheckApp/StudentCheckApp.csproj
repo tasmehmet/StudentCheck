@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-StudentCheckApp-BFF98EA7-BE80-431E-95D3-C3FF228BA76F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210414183703_UpdateUserTable.cs" />
+    <Compile Remove="Data\Migrations\20210414183703_UpdateUserTable.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210414184033_UpdateUserTable2.cs" />
+    <Compile Remove="Data\Migrations\20210414184033_UpdateUserTable2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210414184233_UpdateUserTable3.cs" />
+    <Compile Remove="Data\Migrations\20210414184233_UpdateUserTable3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="NPOI" Version="2.5.2" />
+  </ItemGroup>
+
+</Project>
